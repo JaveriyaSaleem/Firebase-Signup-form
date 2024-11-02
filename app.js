@@ -1,28 +1,12 @@
-import { getAuth, createUserWithEmailAndPassword } from "./firebase.js"
-const auth = getAuth();
-let emailGet = document.getElementById("emailSignup")
-let passwordGet = document.getElementById("passwordSignup")
-let signupBtn = document.getElementById("signup")
+const container = document.getElementById("container");
+const registerBtn = document.getElementById("register");
 
-signupBtn.addEventListener("click",()=>{
-    console.log(emailGet.value , passwordGet.value)
-    createUserWithEmailAndPassword(auth, emailGet.value, passwordGet.value)
-  .then((userCredential) => {
-    // Signed up 
-    const user = userCredential.user;
-    console.log(user)
-    // ...
-    location.href = "login.html"
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    console.log(errorCode)
-    const errorMessage = error.message;
-    console.log(errorMessage)
-    // ..
-  });
+const loginBtn = document.getElementById("login");
 
-})
+registerBtn.addEventListener("click", () => {
+    container.classList.add("active");
+});
 
-
-
+loginBtn.addEventListener("click", () => {
+    container.classList.remove("active");
+});

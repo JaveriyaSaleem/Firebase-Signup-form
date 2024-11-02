@@ -3,20 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>Signup Form</h1><br>
-    <label for="emailSignup">Email Address</label><br>
-    <input type="email" name="email" id="emailSignup"><br>
-    <label for="passwordSignup">Password</label><br>
-    <input type="password" name="password" id="passwordSignup"><br>
-    <button id="signup">Sign up</button>
-     
-    <script src="firebase.js" type="module"></script>
-    <script src="app.js" type="module"></script>
+    <div class="container">
+        <!-- signup  -->
+        <div class="signup">
+            <form action="">
+                <h1>Creat Account</h1>
+                <div class="icon">
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <span>or use email for registration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>sign up</button>
+            </form>
+        </div>
+        <!-- signin  -->
+        <div class="signin">
+            <form action="">
+                <h1>Sign In</h1>
+                <div class="icon">
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <span>or use email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Password</a>
+                <button>Sign in</button>
+            </form>
+        </div>
+        <!-- toggle container  -->
+         <div class="toggle-container">
+            <div class="toggle">
+                <!-- toggle left  -->
+                <div class="toggel-panel toggle-left">
+                    <h1>Welcome User</h1>
+                    <p>If you already have an account</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <!-- right  -->
+                <div class="toggel-panel toggle-right">
+                    <h1>Hello User</h1>
+                    <p>If you don't have an account</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
