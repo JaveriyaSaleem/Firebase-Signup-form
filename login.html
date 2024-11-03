@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font bg-[#F6F5F7]">
     <section class="p-2 sm:p-6 md:flex items-center">
@@ -21,22 +20,22 @@
                 </div>
                 <p class="text-center text-[14px]">or use your account</p>
                 <form action="" class="flex flex-col justify-between px-3 gap-2">
-                    <input type="email" id="" placeholder="Email" required class="border w-100 px-2 py-2 text-[14px]">
-                    <input type="password" id="" placeholder="Password" class="border w-100 px-2 py-2 text-[14px]">
-                    <a href="#">forgot your password?</a>
+                    <input type="email" id="emailSignin" placeholder="Email" required class="border w-100 px-2 py-2 text-[14px]">
+                    <input type="password" id="passwordSignin" placeholder="Password" class="border w-100 px-2 py-2 text-[14px]">
+                    <button id="forgetPass">forgot your password?</button>
                 </form>
-                <div><button class="border border-solid py-2 px-10 text-[12px] font-bold rounded-full bg-[#FF4B2B] text-white hover:transition-all hover:scale-[1.1]">SIGN UP</button></div>
+                <div><button class="border border-solid py-2 px-10 text-[12px] font-bold rounded-full bg-[#FF4B2B] text-white hover:transition-all hover:scale-[1.1]" id="signInBtn">SIGN UP</button></div>
                 
             </div>
             <div class="bg-welcome flex flex-col text-center items-center py-20 hidden sm:block rounded-md">
                 <h1 class="text-[32px] font-bold pb-4">Hello Friend!</h1>
                 <p class="text-center pb-6 w-80 mx-auto">Enter your personal details and start journey with us!</p>
-                <button class="border border-solid py-2 px-10 text-[12px] font-bold rounded-full hover:transition-all hover:scale-[1.1]">SIGN UP</button>
+                <button class="border border-solid py-2 px-10 text-[12px] font-bold rounded-full hover:transition-all hover:scale-[1.1]" id="signupBtn">SIGN UP</button>
             </div> 
         
 
     </div>
 </section>
-    <script src=""></script>
+ <script src="login.js" type="module"></script>
 </body>
 </html>
