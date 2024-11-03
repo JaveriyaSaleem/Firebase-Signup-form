@@ -35,7 +35,7 @@ if(btnLogin){
 }
 if(forgotPass){
     forgotPass.addEventListener('click',()=>{
-        let promptInput = prompt("Enter Value")
+        let promptInput = prompt("Enter your email")
         sendPasswordResetEmail(auth, promptInput)
       .then(() => {
         setTimeout(()=>{
