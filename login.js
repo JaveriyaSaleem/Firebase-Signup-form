@@ -24,6 +24,10 @@ if(btnLogin){
           switch (errorCode){
             case "auth/invalid-credential":
                 alert("Invalid Credentials")
+                break;
+            case "auth/missing-password":
+            alert("Kindly Add your password to continue")
+            break;
             
           }
         });
