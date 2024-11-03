@@ -10,34 +10,33 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font bg-[#F6F5F7]">
-    <section class="p-2 sm:p-6">
-    <div class="   sm:w-[900px] grid grid-cols-1 sm:grid-cols-2 mx-auto mx-[100px] my-[70px] shadow-box rounded-md" >
-            <div class="bg-welcome flex flex-col text-center items-center py-20 hidden sm:block rounded-md">
-                <h1 class="text-[32px] font-bold pb-4">Welcome Back!</h1>
-                <p class="text-center pb-6">To keep connected with us please login with your personal info</p>
-                <button class="border border-solid py-2 px-10 text-[12px] font-bold rounded-full hover:transition-all hover:scale-[1.1]">SIGN IN</button>
-            </div>
-            <div class="bg-white flex flex-col justify-evenly items-stretch text-center gap-5 py-8 px-2 rounded-md">
-                <h1 class="text-[29px] sm:text-[32px] font-bold">Create Account</h1>
+    <section class="p-2 sm:p-6 md:flex items-center">
+    <div class="sm:w-[900px] grid grid-cols-1 sm:grid-cols-2 mx-auto mx-[100px] my-[70px] shadow-box rounded-md" >
+            <div class="bg-white flex flex-col justify-evenly items-stretch text-center gap-5 py-10 px-2 rounded-md">
+                <h1 class="text-[29px] sm:text-[32px] font-bold">Sign in</h1>
                 <div>
                     <a href="#" class="border-[1px] py-3 px-4 border-slate-800 rounded-full text-[12px] hover:bg-[#FF4B2B] hover:border-transparent hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" class="border-[1px] py-3 px-4 border-slate-800 rounded-full text-[12px] hover:bg-[#FF4B2B] hover:border-transparent hover:text-white"><i class="fa-brands fa-google"></i></a>
                     <a href="#" class="border-[1px] py-3 px-4 border-slate-800 rounded-full text-[12px] hover:bg-[#FF4B2B] hover:border-transparent hover:text-white"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <p class="text-center text-[14px]">or use your email for registration</p>
+                <p class="text-center text-[14px]">or use your account</p>
                 <form action="" class="flex flex-col justify-between px-3 gap-2">
-                    <input type="text" id="" placeholder="Name" class="border w-100 px-2 py-2 text-[14px]">
                     <input type="email" id="" placeholder="Email" required class="border w-100 px-2 py-2 text-[14px]">
                     <input type="password" id="" placeholder="Password" class="border w-100 px-2 py-2 text-[14px]">
+                    <a href="#">forgot your password?</a>
                 </form>
                 <div><button class="border border-solid py-2 px-10 text-[12px] font-bold rounded-full bg-[#FF4B2B] text-white hover:transition-all hover:scale-[1.1]">SIGN UP</button></div>
                 
             </div>
+            <div class="bg-welcome flex flex-col text-center items-center py-20 hidden sm:block rounded-md">
+                <h1 class="text-[32px] font-bold pb-4">Hello Friend!</h1>
+                <p class="text-center pb-6 w-80 mx-auto">Enter your personal details and start journey with us!</p>
+                <button class="border border-solid py-2 px-10 text-[12px] font-bold rounded-full hover:transition-all hover:scale-[1.1]">SIGN UP</button>
+            </div> 
         
 
     </div>
 </section>
-    <script src="firebase.js" type="module"></script>
-    <script src="app.js" type="module"></script>
+    <script src=""></script>
 </body>
 </html>
