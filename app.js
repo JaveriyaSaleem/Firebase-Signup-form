@@ -8,6 +8,7 @@ let nameValue = document.getElementById('nameSignup')
 let google = document.getElementById('google')
 let facebook = document.getElementById('facebook')
 let github = document.getElementById('github')
+// google login 
 const provider = new GoogleAuthProvider();
 google.addEventListener("click",()=>{
   signInWithPopup(auth, provider)
@@ -21,6 +22,10 @@ google.addEventListener("click",()=>{
     const user = result.user;
     console.log(user)
     alert("account created!")
+    setTimeout(()=>{
+      location.href = "dashboard.html"
+  },2000)
+
     // IdP data available using getAdditionalUserInfo(result)
     // ...
   }).catch((error) => {
